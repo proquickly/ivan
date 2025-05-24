@@ -1,0 +1,19 @@
+[project]
+name = "ivan"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Andy Miles", email = "andy@proquickly.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "notebook>=7.4.2",
+]
+
+[project.scripts]
+ivan = "ivan:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
