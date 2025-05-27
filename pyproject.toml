@@ -17,3 +17,11 @@ ivan = "ivan:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ivan",
+]
+
+[tool.uv.sources]
+ivan = { workspace = true }

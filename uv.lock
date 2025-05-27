@@ -420,8 +420,16 @@ dependencies = [
     { name = "notebook" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ivan" },
+]
+
 [package.metadata]
 requires-dist = [{ name = "notebook", specifier = ">=7.4.2" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ivan", editable = "." }]
 
 [[package]]
 name = "jedi"
